@@ -8,7 +8,7 @@ const Animation = () => {
         alt="Анімація"
         style={{ maxWidth: '100%', maxHeight: '100%' }}
       />
-      <p>Дякую Друже</p>
+      <p>Дякую</p>
     </div>
   );
 };
@@ -28,7 +28,7 @@ export const App = () => {
   const handleButtonClick = () => {
     setIsThankYouVisible(true);
 
-    //  Після 3 секунд знову приховуємо анімацію і напис "Дякую"
+    // Після 3 секунд знову приховуємо анімацію і напис "Дякую"
     setTimeout(() => {
       setIsThankYouVisible(false);
     }, 3000);
@@ -37,16 +37,12 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
+        padding: '10px',
         backgroundColor: '#F0F0F0',
       }}
     >
       <div
         style={{
-          width: 'calc(100% - 100px)',
           fontSize: 40,
           color: '#010101',
           display: 'flex',
@@ -57,7 +53,7 @@ export const App = () => {
         <div
           style={{
             border: '2px solid blue',
-            padding: '50px',
+            padding: '20px',
             textAlign: 'center',
           }}
         >
@@ -65,10 +61,10 @@ export const App = () => {
             <Animation />
           ) : (
             <>
-              <h1>Привіт Друже</h1>
+              <h1>Привіт Джон</h1>
               <p>
-                Микола любить пити багато водки і пива, взагалі він алкоголік!
-                Якщо хочете йому допомогти, натисніть нище.
+                Джон любить пити багато водки і пива, взагалі він алкоголік!
+                Якщо хочете йому допомогти, натисніть сюди:
               </p>
               <button
                 style={buttonStyle}
