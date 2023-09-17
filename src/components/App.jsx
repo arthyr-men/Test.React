@@ -28,7 +28,7 @@ export const App = () => {
   const handleButtonClick = () => {
     setIsThankYouVisible(true);
 
-    // Після 3 секунд знову приховуємо анімацію і напис "Дякую"
+    //  Після 3 секунд знову приховуємо анімацію і напис "Дякую"
     setTimeout(() => {
       setIsThankYouVisible(false);
     }, 3000);
